@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="build/css/styles.min.css">
+  <title>Верстка сайтов</title>
+</head>
+<body>
+  <header class="header">
+    <div class="conteiner header__intro">
+      <button class="header__burger" aria-label="Меню"></button>
+      <nav class="header__nav nav">
+        <ul class="nav__list nav__list--horizontal">
+          <li class="nav__item"><a href="#second-screen" class="nav__link nav__link--horizontal">Услуги</a></li>
+          <li class="nav__item"><a href="#third-screen" class="nav__link nav__link--horizontal">Портфолио</a></li>
+          <li class="nav__item"><a href="#fourth-screen" class="nav__link nav__link--horizontal">Стоимость</a></li>
+        </ul>
+      </nav>
+      <p class="header__contact">
+        <a class="header__phone phone-link" href="tel:+74999955577">+7 (499) 995-55-77</a>
+        <button class="button-pink button-pink--icon" aria-label="заказать звонок">Заказать звонок</button>
+      </p>
+    </div>
+  </header>
+  <main class="main">
+    <section class="first-screen">
+      <h1 class="section-title">Пустой заголовок</h1>
+      <div class="first-screen__intro conteiner conteiner--width-small">
+        <div class="elements elements--top">
+          <span class="elements__item elements__item--1">{ }</span>
+          <span class="elements__item elements__item--2">#</span>
+          <span class="elements__item elements__item--3">&lt;/&gt;</span>
+          <span class="elements__item elements__item--4">&lt;div&gt;</span>
+          <span class="elements__item elements__item--5">&lt;div&gt;</span>
+        </div>
+        <div class="first-screen__photo photo">
+          <img class="photo__item" src="./build/img/man.png" alt="man">
+        </div>
+        <div class="first-screen__intro_content">
+          <h1 class="first-screen__name">Дмитрий Алексеев</h1>
+          <p class="first-screen__desc">Frontend-разработчик и веб-верстальщик</p>
+          <button class="first-screen__button button-orange" aria-label="узнать больше">Узнать больше</button>
+        </div>
+      </div>
+    </section>
+    <section id="second-screen" class="second-screen">
+        <div class="second-screen_content conteiner">
+          <h2 class="second-screen__title subtitle">Что я делаю</h2>
+          <ul class="service">
+            <li class="service__item service__item--1">Вёрстка лендинг–страниц<br>и сайтов любой сложности</li>
+            <li class="service__item service__item--2">Адаптивная вёрстка под все<br>браузеры и устройства</li>
+            <li class="service__item service__item--3">Frontend–разработка<br>и программирование</li>
+            <li class="service__item service__item--4">Исправление и доработка<br>существующей вёрстки</li>
+          </ul>
+          <button class="second-screen__button button-orange" aria-label="узнать больше">Узнать стоимость</button>
+        </div>
+    </section>
+    <section id="third-screen" class="third-screen">
+        <div class="third-screen__content conteiner">
+          <h2 class="third-screen__title subtitle">Примеры моих работ</h2>
+          <div class="swiper-container">
+            <div class="slider">
+              <div class="slider__item example">
+                <img class="example__img" src="./build/img/Layer_2.png" alt="">
+                <p class="example__title">Сайт психолога Веры Антоновой</p>
+              </div>
+              <div class="slider__item example">
+                <img class="example__img" src="./build/img/Layer_1.png" alt="">
+                <p class="example__title">Сайт магазина детской одежды</p>
+              </div>
+              <div class="slider__item example">
+                <img class="example__img" src="./build/img/Layer_3.png" alt="">
+                <p class="example__title">Сайт магазина «Рыболов»</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider__pagination"></div>
+          <button class="slider__button slider__button--prev"></button>
+          <button class="slider__button slider__button--next"></button>
+          <button class="third-screen__button button-orange">Заказать проект</button>
+        </div>
+    </section>
+    <section id="fourth-screen" class="fourth-screen">
+      <h1 class="section-title">Пустой заголовок</h1>
+      <div class="conteiner conteiner--rel">
+        <div class="elements">
+          <span class="elements__item elements__item--white elements__item--6">{ }</span>
+          <span class="elements__item elements__item--white elements__item--7">#</span>
+          <span class="elements__item elements__item--white elements__item--8">&lt;/&gt;</span>
+          <span class="elements__item elements__item--white elements__item--9">&lt;div&gt;</span>
+          <span class="elements__item elements__item--white elements__item--10">{ }</span>
+        </div>
+        <div class="fourth-screen__content">
+          <p class="fourth-screen__conditions">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</p>
+          <p class="fourth-screen__desc">Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="conteiner">
+      <div class="footer__content">
+        <nav class="footer__nav nav">
+          <ul class="nav__list nav__list--vertical">
+            <li class="nav__item"><a href="#" class="nav__link nav__link--grey">Услуги</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__link--grey">Портфолио</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__link--grey">Стоимость</a></li>
+          </ul>
+        </nav>
+        <ul class="footer__center contact">
+          <li class="contact__item"><a class="contact__link" href="tel:+74999955577"><i class="icofont-phone"></i>  +7 (499) 995-55-77</a></li>
+          <li class="contact__item"><a class="contact__link" href="mailto:dmitry@alekseev.com"><i class="icofont-envelope"></i>  dmitry@alekseev.com</a></li>
+        </ul>
+        <div class="footer__right">
+          <button class="footer__button button-pink" aria-label="заказать звонок">Заказать звонок</button>
+          <ul class="social">
+            <li class="social__item"><a href="#" class="social__link social__link--vk"></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--facebook"></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--twitter"></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--insta"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© Дмитрий Алексеев, 2016 – 2018</p>
+  </footer>
+<script src="build/js/script.min.js"></script>
+</body>
+</html>
