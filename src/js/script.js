@@ -23,11 +23,11 @@ var mySwiper = new Swiper ('.swiper-container', {
     clickable: true,
   },
 });
-$(document).ready(function(){
-	$('.header__burger').on('click', function(){
+$(document).ready(function() {
+  $('.header__burger').on('click', function(){
 		$('.nav__list--horizontal').slideToggle(300)
     $(this).toggleClass('header__burger--close')
   });
-  $('.elements').toggleClass('elements--active');
+    $('.elements').toggleClass('elements--active');
 });
 
