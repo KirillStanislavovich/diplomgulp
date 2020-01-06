@@ -11,6 +11,8 @@ const imagemin = require('gulp-imagemin');
 const jsFiles = [
   './src/js/jquery-3.4.1.min.js',
   './src/js/swiper.min.js',
+  './src/js/jquery.inputmask.min.js',
+  './src/js/jquery.validate.min.js',
   './src/js/script.js',
 ]
 
@@ -29,9 +31,6 @@ function styles() {
 function scripts() {
   return gulp.src(jsFiles)
     .pipe(concat('script.min.js'))
-    .pipe(uglify({
-      toplevel: true
-    }))
     .pipe(gulp.dest('./build/js/'));
 }
 
@@ -55,6 +54,11 @@ function font() {
     .pipe(gulp.dest('./build/fonts/'));
 }
 
+function php() {
+  return gulp.src('./src/php/**/*.php')
+    .pipe(gulp.dest('./build/php/'))
+}
+
 function watch() {
   gulp.watch('./src/css/**/*.css', styles);
   gulp.watch('./src/js/**/*.js', scripts);
@@ -69,4 +73,4 @@ gulp.task('scripts', scripts);
 gulp.task('watch', watch);
 gulp.task('image', image);
 
-gulp.task('default', gulp.series(clean, gulp.parallel(styles, scripts, font), image, 'watch'));
+gulp.task('default', gulp.series(clean, gulp.parallel(styles, scripts, font, php), image, 'watch'));

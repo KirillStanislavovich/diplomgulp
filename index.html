@@ -5,9 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="build/css/styles.min.css">
+  <script defer src="build/js/script.min.js"></script>
   <title>Верстка сайтов</title>
 </head>
 <body>
+  <div class="popup popup--pink">
+    <img src="./build/img/form/close.png" alt="close" class="form__close">
+    <form class="form">
+      <input type="hidden" name="project_name" value="kigdev.ru">
+      <input type="hidden" name="admin_email" value="kirill.iz.nur@gmail.com">
+      <input type="hidden" name="form_subject" value="Заявка на звонок">
+      <label for="name" class="form__label">Ваше имя</label>
+      <input type="text" class="form__input" name="name" placeholder="Иван">
+      <label for="phone" class="form__label">Ваш номер телефона</label>
+      <input type="tel" class="form__input" name="phone" placeholder="8 (___) ___-____">
+      <button type="submit" class="form__btn">Заказать звонок</button>
+    </form>
+  </div>
+  <div class="popup popup--orange">
+    <img src="./build/img/form/close.png" alt="" class="form__close">
+    <form class="form">
+      <input type="hidden" name="project_name" value="kigdev.ru">
+      <input type="hidden" name="admin_email" value="kirill.iz.nur@gmail.com">
+      <input type="hidden" name="form_subject" value="Запрос">
+      <label for="name" class="form__label">Ваше имя</label>
+      <input type="text" class="form__input" name="name" placeholder="Иван">
+      <label for="mail" class="form__label">Ваш email</label>
+      <input type="mail" class="form__input" name="mail" placeholder="user@domen.com">
+      <label for="question" class="form__label">Ваш вопрос</label>
+      <input type="text" class="form__input" name="question">
+      <button type="submit" class="form__btn">Отправить запрос</button>
+    </form>
+  </div>
   <header class="header">
     <div class="conteiner header__intro">
       <button class="header__burger" aria-label="Меню"></button>
@@ -104,9 +133,9 @@
       <div class="footer__content">
         <nav class="footer__nav nav">
           <ul class="nav__list nav__list--vertical">
-            <li class="nav__item"><a href="#" class="nav__link nav__link--grey">Услуги</a></li>
-            <li class="nav__item"><a href="#" class="nav__link nav__link--grey">Портфолио</a></li>
-            <li class="nav__item"><a href="#" class="nav__link nav__link--grey">Стоимость</a></li>
+            <li class="nav__item"><a href="#second-screen" class="nav__link nav__link--grey">Услуги</a></li>
+            <li class="nav__item"><a href="#third-screen" class="nav__link nav__link--grey">Портфолио</a></li>
+            <li class="nav__item"><a href="#fourth-screen" class="nav__link nav__link--grey">Стоимость</a></li>
           </ul>
         </nav>
         <ul class="footer__center contact">
@@ -126,6 +155,6 @@
     </div>
     <p class="copyright">© Дмитрий Алексеев, 2016 – 2018</p>
   </footer>
-<script src="build/js/script.min.js"></script>
+
 </body>
 </html>
