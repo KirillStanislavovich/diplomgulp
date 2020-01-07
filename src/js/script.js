@@ -69,14 +69,17 @@ $(document).ready(function() {
   });
 
   $('.button-pink').on('click', function(){
-    $('.popup--pink').toggle()
+    $('.popup--pink').toggle();
+    $('body').addClass('not-scroll');
   });
 
   $('.button-orange').on('click', function(){
-    $('.popup--orange').toggle()
+    $('.popup--orange').toggle();
+    $('body').addClass('not-scroll');
   });
 
   $('.form__close').on('click', function(){
-    $('.popup').hide()
+    $('.popup').hide();
+    $('body').removeClass('not-scroll');
   });
 });

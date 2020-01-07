@@ -25,6 +25,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -50,6 +51,10 @@ li {
   max-width: 1210px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.not-scroll {
+  overflow: hidden;
 }
 
 .section-title {
@@ -80,6 +85,12 @@ li {
   position: absolute;
   right: 5px;
   top: 5px;
+  background: url(../img/form/close.png) no-repeat center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: 0;
 }
 
 .form__close:hover {
@@ -100,16 +111,16 @@ li {
   text-align: center;
   width: 60%;
   padding: 10px 0;
+  margin-bottom: 10px;
   outline: none;
 }
 
 .form__label {
-  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
 .form__btn {
   font-size: 20px;
-  margin-top: 20px;
   padding: 10px 20px;
   border: 1px solid #c3c5c9;
   border-radius: 15px;
