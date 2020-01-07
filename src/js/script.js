@@ -60,6 +60,7 @@ $(document).ready(function() {
           url: '../../build/php/post.php',
           data: th.serialize(),
         }).done(() => {
+          alert("Данные успешно отправлены"),
           th.trigger('reset');
         });
         return false;
