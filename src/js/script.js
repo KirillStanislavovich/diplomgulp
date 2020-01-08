@@ -48,6 +48,7 @@ $(document).ready(function() {
         },
         mail: {
           required: true,
+          email: true,
         },
         question: {
           required: true,
@@ -60,7 +61,7 @@ $(document).ready(function() {
           url: '../../build/php/post.php',
           data: th.serialize(),
         }).done(() => {
-          alert("Данные успешно отправлены"),
+          $('.form').append("<p class='form__success'>Запрос успешно отправлен</p>");
           th.trigger('reset');
         });
         return false;
@@ -81,5 +82,6 @@ $(document).ready(function() {
   $('.form__close').on('click', function(){
     $('.popup').hide();
     $('body').removeClass('not-scroll');
+    $('.form__success').remove();
   });
 });

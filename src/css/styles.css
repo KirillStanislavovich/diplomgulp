@@ -135,6 +135,10 @@ li {
   transition: all 0.2s;
 }
 
+.form__success {
+  margin-top: 10px;
+}
+
 .error {
   border-color: #f82370;
 }
