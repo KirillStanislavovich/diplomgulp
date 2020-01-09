@@ -638,6 +638,9 @@ li {
 .social {
   display: flex;
   flex-direction: row;
+}
+
+.footer__social {
   margin-top: 25px;
 }
 
@@ -1039,7 +1042,7 @@ li {
     text-align: center;
   }
 
-  .social {
+  .footer__social {
     margin-top: 50px;
   }
 
